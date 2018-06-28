@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Semantic UI</title>
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.com/libraries/semantic-ui">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.2/semantic.min.css">
   <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
   <script src="semantic/dist/semantic.min.js"></script>
   <link rel="stylesheet" href="style.css">
@@ -16,15 +16,36 @@
 
   <header>
     <div class="ui grid">
-      <div class="four wide column"></div>
-      <div class="four wide column"></div>
-      <div class="four wide column"></div>
-      <div class="four wide column"></div>
+
+      <div class="four wide column">
+        <img src="https://www.pole-emploi.fr/accueil/file/sitemodel/pefr/images/accueil/header-logo-pole-emploi-mono.png">
+      </div>
+
+      <div id="pub" class="eight wide column">
+        <img src="https://www.pole-emploi.fr/accueil/image/mmlelement/pj/ed/7a/bd/31/banniere-profil54779.gif">
+      </div>
+
+      <!--<div class="four wide column"></div>-->
+
+      <div class="four wide column">
+        <div class="connexion">
+          <button class="ui basic button">
+          <i class="icon user"></i>CONNEXION</button>
+        </div>
+      </div>
+
     </div>
-    
   </header>
 
-  <main></main>
+  <main>
+    <div class="ui fluid category search">
+      <div id="recherche" class="ui icon input">
+        <input class="prompt" type="text" placeholder="Métier, compétence, mot clé, n° d'offre" style="width: 35vw">
+        <i class="search icon"></i>
+      </div>
+      <div class="results"></div>
+    </div>
+  </main>
 
   <footer>
     <div class="ui grid">
